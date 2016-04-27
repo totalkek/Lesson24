@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	
+
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="/vendor/jquery-1.9.1.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
 
 			<div>
 			      <%if @error then %>
-			          <div class="alert alert-error"><%=@error%></div>
+			          <div class="alert alert-danger"><%=@error%></div>
 			      <% end %>
 			      <%= yield %>
 			</div>
