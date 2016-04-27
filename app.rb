@@ -22,8 +22,11 @@ post '/visit' do
 	@barber = params[:barber]
 	@color = params[:color]
 
-	if (@username == '')
-		@error = "Введите имя"
+	if ((@username == '') || (@phone == '') || (@datetime == ''))
+		@error = "Заполните пустые поля!"
+	end
+
+	if @error != ''
 		return erb :visit
 	end
 
